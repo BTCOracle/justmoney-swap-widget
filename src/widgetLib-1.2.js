@@ -68,3 +68,22 @@ var JmApi = window.JmApi || {
             var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghiklmnopqrstuvwxyz'.split('');
             if (! length) {
                 length = Math.floor(Math.random() * chars.length);
+            }
+            var str = '';
+            for (var i = 0; i < length; i++) {
+                str += chars[Math.floor(Math.random() * chars.length)];
+            }
+            return str;
+        }
+
+        let src = 'https://just.money/widget';
+        if (options.type && options.type.toUpperCase() == 'CROSSCHAIN') {
+            src = 'https://just.money/ccwidget'
+        }
+        let id = 'JmSwapWidget_' + randomString(8);
+        document.head.insertAdjacentHTML("beforeend", '<style>.JmSwapWidget{width:500px;height:500px;margin:auto;display:block;border:0;overflow: hidden;}</style>');
+        if (element && element instanceof HTMLElement) {
+            let iframe = window.document.createElement('iframe');
+            iframe.src = src;
+            iframe.className = 'JmSwapWidget';
+            iframe.id = id;
