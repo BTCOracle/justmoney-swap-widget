@@ -131,3 +131,9 @@ var JmApi = window.JmApi || {
             return str;
         }
 
+        let src = 'https://just.money/widget';
+        if (options.type && options.type.toUpperCase() == 'CROSSCHAIN') {
+            src = 'https://just.money/ccwidget'
+        }
+        let id = 'JmSwapWidget_' + randomString(8);
+        document.head.insertAdjacentHTML("beforeend", '<style>.JmSwapWidget{width:500px;height:500px;margin:auto;display:block;border:0;overflow: hidden;}</style>');
