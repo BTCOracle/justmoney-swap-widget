@@ -274,3 +274,8 @@ var JmApi = window.JmApi || {
         } else {
             document.write('<iframe class="JmSwapWidget" id="' + id + '" src="' + src + '" allowtransparency="true" scrolling="no"></iframe>');
         }
+        return id;
+    }
+}
+var JmApi = window.JmApi || {
+    swapWidget: function (iframeID, options) {
