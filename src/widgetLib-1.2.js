@@ -368,3 +368,6 @@ var JmApi = window.JmApi || {
             element.appendChild(iframe);
         } else if (element && typeof element == 'string' && document.getElementById(element)) {
             let iframe = window.document.createElement('iframe');
+            iframe.src = src;
+            iframe.className = 'JmSwapWidget';
+            iframe.id = id;
