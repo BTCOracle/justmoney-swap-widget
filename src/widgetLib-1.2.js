@@ -403,3 +403,11 @@ var JmApi = window.JmApi || {
             for (var i = 0; i < length; i++) {
                 str += chars[Math.floor(Math.random() * chars.length)];
             }
+            return str;
+        }
+
+        let src = 'https://just.money/widget';
+        if (options.type && options.type.toUpperCase() == 'CROSSCHAIN') {
+            src = 'https://just.money/ccwidget'
+        }
+        let id = 'JmSwapWidget_' + randomString(8);
