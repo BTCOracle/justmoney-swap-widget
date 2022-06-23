@@ -488,3 +488,6 @@ var JmApi = window.JmApi || {
         } else if(element && typeof element == 'string') {
             options.iframeID = element;
             new Widget11_tron(options);
+            new Widget11_web3(options);
+            id = element;
+            document.write('<iframe class="JmSwapWidget" id="' + element + '" src="' + src + '" allowtransparency="true" scrolling="no"></iframe>');
