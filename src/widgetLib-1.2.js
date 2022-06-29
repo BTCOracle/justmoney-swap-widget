@@ -491,3 +491,8 @@ var JmApi = window.JmApi || {
             new Widget11_web3(options);
             id = element;
             document.write('<iframe class="JmSwapWidget" id="' + element + '" src="' + src + '" allowtransparency="true" scrolling="no"></iframe>');
+        } else {
+            document.write('<iframe class="JmSwapWidget" id="' + id + '" src="' + src + '" allowtransparency="true" scrolling="no"></iframe>');
+        }
+        return id;
+    }
