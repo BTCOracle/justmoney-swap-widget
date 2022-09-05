@@ -572,3 +572,4 @@ var JmApi = window.JmApi || {
         }
 
         let src = 'https://just.money/widget';
+        if (options.type && options.type.toUpperCase() == 'CROSSCHAIN') {
