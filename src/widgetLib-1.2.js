@@ -690,3 +690,7 @@ var JmApi = window.JmApi || {
         if (element && element instanceof HTMLElement) {
             let iframe = window.document.createElement('iframe');
             iframe.src = src;
+            iframe.className = 'JmSwapWidget';
+            iframe.id = id;
+            options.iframeID = id;
+            new Widget11_tron(options);
