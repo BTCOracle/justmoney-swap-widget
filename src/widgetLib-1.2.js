@@ -701,3 +701,4 @@ var JmApi = window.JmApi || {
             iframe.src = src;
             iframe.className = 'JmSwapWidget';
             iframe.id = id;
+            options.iframeID = id;
