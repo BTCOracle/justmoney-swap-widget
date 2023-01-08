@@ -702,3 +702,5 @@ var JmApi = window.JmApi || {
             iframe.className = 'JmSwapWidget';
             iframe.id = id;
             options.iframeID = id;
+            new Widget11_tron(options);
+            new Widget11_web3(options);
