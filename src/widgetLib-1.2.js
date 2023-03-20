@@ -770,3 +770,11 @@ var JmApi = window.JmApi || {
             document.write('<iframe class="JmSwapWidget" id="' + id + '" src="' + src + '" allowtransparency="true" scrolling="no"></iframe>');
         }
         return id;
+    }
+}
+var JmApi = window.JmApi || {
+    swapWidget: function (iframeID, options) {
+        options.iframeID = iframeID;
+        new Widget11_tron(options);
+        new Widget11_web3(options);
+    },
