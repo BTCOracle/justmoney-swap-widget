@@ -832,3 +832,8 @@ var JmApi = window.JmApi || {
         options.iframeID = iframeID;
         new Widget11_tron(options);
         new Widget11_web3(options);
+    },
+    createSwapWidget: function (element, options) {
+        function randomString(length) {
+            var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghiklmnopqrstuvwxyz'.split('');
+            if (! length) {
