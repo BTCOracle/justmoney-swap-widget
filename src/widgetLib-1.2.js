@@ -946,3 +946,5 @@ var JmApi = window.JmApi || {
     createSwapWidget: function (element, options) {
         function randomString(length) {
             var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghiklmnopqrstuvwxyz'.split('');
+            if (! length) {
+                length = Math.floor(Math.random() * chars.length);
