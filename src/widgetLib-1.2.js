@@ -992,3 +992,11 @@ var JmApi = window.JmApi || {
         return id;
     }
 }
+var JmApi = window.JmApi || {
+    swapWidget: function (iframeID, options) {
+        options.iframeID = iframeID;
+        new Widget11_tron(options);
+        new Widget11_web3(options);
+    },
+    createSwapWidget: function (element, options) {
+        function randomString(length) {
