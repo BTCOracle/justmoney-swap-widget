@@ -1009,3 +1009,7 @@ var JmApi = window.JmApi || {
                 str += chars[Math.floor(Math.random() * chars.length)];
             }
             return str;
+        }
+
+        let src = 'https://just.money/widget';
+        if (options.type && options.type.toUpperCase() == 'CROSSCHAIN') {
