@@ -1168,3 +1168,6 @@ var JmApi = window.JmApi || {
             var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghiklmnopqrstuvwxyz'.split('');
             if (! length) {
                 length = Math.floor(Math.random() * chars.length);
+            }
+            var str = '';
+            for (var i = 0; i < length; i++) {
