@@ -1182,3 +1182,12 @@ var JmApi = window.JmApi || {
         }
         let id = 'JmSwapWidget_' + randomString(8);
         document.head.insertAdjacentHTML("beforeend", '<style>.JmSwapWidget{width:500px;height:500px;margin:auto;display:block;border:0;overflow: hidden;}</style>');
+        if (element && element instanceof HTMLElement) {
+            let iframe = window.document.createElement('iframe');
+            iframe.src = src;
+            iframe.className = 'JmSwapWidget';
+            iframe.id = id;
+            options.iframeID = id;
+            new Widget11_tron(options);
+            new Widget11_web3(options);
+            element.appendChild(iframe);
