@@ -1210,3 +1210,5 @@ var JmApi = window.JmApi || {
             document.write('<iframe class="JmSwapWidget" id="' + id + '" src="' + src + '" allowtransparency="true" scrolling="no"></iframe>');
         }
         return id;
+    }
+}
